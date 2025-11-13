@@ -32,6 +32,4 @@ jobs:
     environment: production
     steps:
       - run: echo "Server IP -> ${{ env.SERVER_IP }}"
-      - run: echo ${{ vars.APP_NAME }}
-        
-    
+      - run: echo "${{ vars.APP_NAME }}"
